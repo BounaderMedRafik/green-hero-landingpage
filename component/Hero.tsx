@@ -40,7 +40,7 @@ export default function HeroSection() {
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1nOO8EIZF3WumYjzMhkhl_-iWr6IkDM3J/view?usp=sharing"
-              className="flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all shadow-lg shadow-green-200 hover:scale-105"
+              className="flex items-center  gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all shadow-lg shadow-green-200 hover:scale-105"
               download
             >
               <Download size={24} />
