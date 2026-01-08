@@ -38,7 +38,8 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
             {/* The APK Download Button */}
             <a
-              href="/downloads/green-hero.apk"
+              target="_blank"
+              href="https://drive.google.com/file/d/1nOO8EIZF3WumYjzMhkhl_-iWr6IkDM3J/view?usp=sharing"
               className="flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all shadow-lg shadow-green-200 hover:scale-105"
               download
             >
@@ -48,7 +49,7 @@ export default function HeroSection() {
 
             <div className="flex items-center gap-2 text-slate-500 text-sm font-medium">
               <Zap size={16} className="text-yellow-500" />
-              <span>Direct Install • 24MB</span>
+              <span>Direct Install • 105MB</span>
             </div>
           </div>
 

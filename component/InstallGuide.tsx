@@ -1,7 +1,7 @@
 export function InstallGuide() {
   return (
-    <section className="py-16 bg-green-900 text-white rounded-[3rem] mx-4 mb-20 overflow-hidden">
-      <div className="container mx-auto px-8 lg:flex items-center">
+    <section className="py-16 bg-green-900 text-white rounded-[3rem] max-w-7xl mx-auto mx-4 mb-20 overflow-hidden">
+      <div className=" mx-auto px-8 lg:flex items-center">
         <div className="lg:w-1/2">
           <h2 className="text-3xl font-bold mb-6">How to Install GreenHero</h2>
           <ul className="space-y-4">

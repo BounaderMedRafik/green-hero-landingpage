@@ -19,7 +19,7 @@ const steps = [
 export function HowItWorks() {
   return (
     <section className="py-20 bg-slate-50">
-      <div className="container mx-auto px-6 text-center">
+      <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold mb-12">Become a Hero in 3 Steps</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (

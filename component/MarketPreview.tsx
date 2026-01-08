@@ -8,7 +8,7 @@ const categories = [
 export function MarketPreview() {
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl font-bold">Spend your Eco-Points</h2>
