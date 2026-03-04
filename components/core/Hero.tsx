@@ -86,21 +86,30 @@ const Hero = () => {
       <p className=" text-xs px-3 py-1.5 leading-none mb-3  relative z-20 bg-primary text-background rounded-full shadow">
         Beta Version 1.1
       </p>
-      <h1 className=" text-4xl md:text-7xl font-serif max-w-sm md:max-w-2xl text-center leading-[0.8] relative z-20">
-        Lorem ipsum dolor sit amet consectetur.
+      <h1 className=" text-4xl md:text-7xl font-serif max-w-sm md:max-w-5xl md:mb-5 text-center leading-[0.8] relative z-20">
+        Your next level to your waste management & recycling.
       </h1>
       <p className=" text-sm opacity-75 max-w-md text-center mt-4 relative z-20">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, corrupti
-        quisquam fugit aliquam aliquid repellendus temporibus!
+        GreenHero is not just about throwing things away correctly. It is about
+        building sustainable habits, quantifying ecological contribution, and
+        turning waste into opportunity.
       </p>
 
       <div className=" mt-7 flex items-center gap-1 relative z-20">
-        <Button size={"lg"}>
-          Download <Download className="ml-2 size-4" />
-        </Button>
-        <Button variant={"outline"} size={"lg"}>
-          Learn More <InfoIcon className="ml-2 size-4" />
-        </Button>
+        <a
+          href="https://drive.google.com/file/d/1nOO8EIZF3WumYjzMhkhl_-iWr6IkDM3J/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button size={"lg"}>
+            Download <Download className="ml-2 size-4" />
+          </Button>
+        </a>
+        <a href="/#about-us">
+          <Button variant={"outline"} size={"lg"}>
+            Learn More <InfoIcon className="ml-2 size-4" />
+          </Button>
+        </a>
       </div>
     </div>
   );

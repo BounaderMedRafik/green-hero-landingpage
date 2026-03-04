@@ -1,74 +1,62 @@
-import { Banana, Bike, Cake } from "lucide-react";
+import { CircleDollarSign } from "lucide-react";
 import React from "react";
 
-const features: {
+const feats: {
   title: string;
-  description: string;
+  desc: string;
   icon: React.ReactNode;
 }[] = [
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quos, nemo consequuntur natus enim eius, quo repellendus quas incidunt ab aliquid soluta vel earum sunt deleniti at voluptatibus pariatur eum iste? Totam reprehenderit quas neque voluptatum voluptates dicta, eveniet commodi, harum ratione voluptate in.",
-    icon: <Banana size={24} />,
+    title: "Lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores atque vero nulla inventore maxime!",
+    icon: <CircleDollarSign className=" text-primary" size={32} />,
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quos, nemo consequuntur natus enim eius, quo repellendus quas incidunt ab aliquid soluta vel earum sunt deleniti at voluptatibus pariatur eum iste? Totam reprehenderit quas neque voluptatum voluptates dicta, eveniet commodi, harum ratione voluptate in.",
-    icon: <Bike size={24} />,
+    title: "Lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores atque vero nulla inventore maxime!",
+    icon: <CircleDollarSign className=" text-primary" size={32} />,
   },
   {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quos, nemo consequuntur natus enim eius, quo repellendus quas incidunt ab aliquid soluta vel earum sunt deleniti at voluptatibus pariatur eum iste? Totam reprehenderit quas neque voluptatum voluptates dicta, eveniet commodi, harum ratione voluptate in.",
-    icon: <Cake size={24} />,
+    title: "Lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores atque vero nulla inventore maxime!",
+    icon: <CircleDollarSign className=" text-primary" size={32} />,
+  },
+  {
+    title: "Lorem",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores atque vero nulla inventore maxime!",
+    icon: <CircleDollarSign className=" text-primary" size={32} />,
   },
 ];
-
 const Features = () => {
   return (
-    <>
-      <div className="max-h-screen px-8 bg-accent overflow-hidden hidden md:block">
-        <h2 className="text-5xl font-light text-end max-w-5xl ml-auto pt-6 mb-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          impedit quidem mollitia.
-        </h2>
-
-        <div className="grid grid-cols-6 gap-8 ">
-          {/* Left column - Phone image */}
-          <div className="col-span-3 flex justify-center">
-            <img
-              className="h-[140vh] max-w-full object-contain drop-shadow-2xl"
-              src="/phone/sc-left.png"
-              alt="Phone mockup"
-            />
-          </div>
-
-          {/* Right column - Features grid */}
-          <div className="col-span-3 ">
-            <p className="text-lg text-justify opacity-75 mb-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              quos, nemo consequuntur natus enim eius, quo repellendus quas
-              incidunt ab aliquid soluta vel earum sunt deleniti at voluptatibus
-              pariatur eum iste? Totam reprehenderit quas neque voluptatum
-              voluptates dicta, eveniet commodi, harum ratione voluptate in.
-            </p>
-
-            <div className="grid grid-cols-3 gap-4">
-              {features.map((item, i) => (
-                <div key={i} className="p-3 bg-white/10 rounded-lg">
-                  <div className="text-2xl mb-2">{item.icon}</div>
-                  <h3 className="font-semibold mb-1">{item.title}</h3>
-                  <p className="text-sm opacity-75">{item.description}</p>
-                </div>
-              ))}
+    <div>
+      <div className="  p-10 bg-accent">
+        <h2 className=" opacity-75 font-light">use cases</h2>
+        <div className="flex items-center justify-between mt-2">
+          <h1 className="md:text-5xl text-xl font-light md:max-w-3xl text-justify ">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </h1>
+          <p className=" text-lg font-light opacity-75 max-w-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            maiores atque vero nulla inventore maxime!
+          </p>
+        </div>
+        <div className=" mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+          {feats.map((feat, i) => (
+            <div
+              key={i}
+              className="p-6 border border-foreground/10  flex flex-col items-start gap-4"
+            >
+              {feat.icon}
+              <h1 className=" mt-4 font-bold text-xl font-serif">
+                {feat.title}
+              </h1>
+              <p className="  opacity-50 max-w-md ">{feat.desc}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-      <div className=" block md:hidden">hello</div>
-    </>
+    </div>
   );
 };
 

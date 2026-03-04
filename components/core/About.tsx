@@ -41,21 +41,26 @@ const team: {
 ];
 const About = () => {
   return (
-    <div className="px-4">
+    <div id="about-us" className="px-4">
       <h1 className="md:text-5xl text-xl font-light md:max-w-7xl text-justify">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet
-        illo rem deleniti doloribus fuga, totam, quaerat, similique commodi
-        sequi nihil iste omnis tempora!
+        we have created GreenHero in the arms of the Algerian youth competetion,
+        and we are proud to reveal that we done a great job!
       </h1>
 
       <div className=" block md:grid grid-cols-6 w-full mt-14">
         <div className=" col-span-2 justify-end items-end flex p-4">
           <div>
             <p className="  text-2xl text-justify opacity-75">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-              sequi quidem veniam ab provident explicabo fuga, aliquam illum
-              ipsum iure eaque, debitis commodi earum rerum. Fugit porro quod
-              atque similique nisi blanditiis eligendi quibusdam.
+              We are a passionate team of three, united by a shared vision to
+              revolutionize waste management and recycling. With a blend of
+              expertise in web development, AI, and backend systems, we are
+              dedicated to creating innovative solutions that empower
+              individuals and communities to make a positive impact on the
+              environment. Our commitment to sustainability drives us to develop
+              user-friendly platforms that not only educate but also inspire
+              action towards a greener future. Together, we strive to turn waste
+              into opportunity and build a more sustainable world for
+              generations to come.
             </p>
 
             <div className=" grid grid-cols-3 gap-2  mt-8">

@@ -10,12 +10,7 @@ import {
 
 const Navigation = () => {
   const logo = "/logo.png";
-  const nav_items: { name: string; link: string }[] = [
-    { name: "Features", link: "/#features" },
-    { name: "About us", link: "/#about-us" },
-    { name: "How it works", link: "/#how-it-works" },
-    { name: "Testimonials", link: "/#testimonials" },
-  ];
+  const nav_items: { name: string; link: string }[] = [];
 
   return (
     <nav className="fixed top-0 left-0 w-full  z-50 ">
